@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeonghyeon Kim - Ph.D. Student in Computer Science at KAIST. Researching concurrent systems, memory reclamation, and formal verification.">
+    <meta name="keywords" content="Jeonghyeon Kim, KAIST, Computer Science, Concurrent Systems, Formal Verification, Hazard Pointers">
+    <meta name="author" content="Jeonghyeon Kim">
+    <meta property="og:title" content="Jeonghyeon Kim - Ph.D. Student at KAIST">
+    <meta property="og:description" content="Researching concurrent systems and formal verification.">
+    <meta property="og:type" content="website">
     <title>Jeonghyeon Kim</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,20 +84,20 @@
         }
     </style>
 </head>
-<body class="text-slate-700">
+<body class="text-stone-700 antialiased">
 
     <!-- Header & Navigation -->
-    <header id="header" class="bg-slate-50/80 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
+    <header id="header" class="bg-stone-50/80 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <a href="#" class="text-2xl font-bold text-slate-800">Jeonghyeon Kim</a>
+                <a href="#" class="text-2xl font-bold text-stone-800">Jeonghyeon Kim</a>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link text-slate-600 font-medium">About</a>
-                    <a href="#research" class="nav-link text-slate-600 font-medium">Research</a>
-                    <a href="#publications" class="nav-link text-slate-600 font-medium">Publications</a>
-                    <a href="#awards" class="nav-link text-slate-600 font-medium">Awards</a>
+                    <a href="#about" class="nav-link text-stone-600 font-medium">About</a>
+                    <a href="#research" class="nav-link text-stone-600 font-medium">Research</a>
+                    <a href="#publications" class="nav-link text-stone-600 font-medium">Publications</a>
+                    <a href="#awards" class="nav-link text-stone-600 font-medium">Awards</a>
                 </nav>
-                 <button id="mobile-menu-button" class="md:hidden text-slate-700">
+                 <button id="mobile-menu-button" class="md:hidden text-stone-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
@@ -111,22 +117,23 @@
         <section id="about" class="min-h-[calc(100vh-4rem)] flex items-center py-16">
             <div class="w-full flex flex-col-reverse md:flex-row items-center gap-12 lg:gap-16">
                 <div class="md:w-2/3">
-                    <h1 class="text-4xl md:text-6xl font-bold text-slate-800 leading-tight">Jeonghyeon Kim</h1>
-                    <div class="mt-8 text-lg md:text-xl text-slate-600 max-w-3xl space-y-6">
+                    <h1 class="text-4xl md:text-6xl font-bold text-stone-800 leading-tight">Jeonghyeon Kim</h1>
+                    <div class="mt-8 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl space-y-6">
                         <p>
-                            I am a <strong class="text-slate-700">Ph.D. student</strong> at <a href="https://www.kaist.ac.kr" target="_blank" class="text-teal-600 hover:underline font-medium">KAIST</a>, currently advised by <a href="https://sites.google.com/view/yjkwon/home" target="_blank" class="text-teal-600 hover:underline font-medium">Prof. Youngjin Kwon</a> in the School of Computing.
+                            I am a <strong class="text-stone-700">Ph.D. student</strong> at <a href="https://www.kaist.ac.kr" target="_blank" class="text-teal-600 hover:underline font-medium">KAIST</a>, currently advised by <a href="https://sites.google.com/view/yjkwon/home" target="_blank" class="text-teal-600 hover:underline font-medium">Prof. Youngjin Kwon</a> in the School of Computing.
                         </p>
                         <ul class="list-disc list-outside ml-6 space-y-3 text-base md:text-lg">
                             <li>
-                                <strong>Ph.D. in Computer Science</strong>, KAIST, Feb 2026 – Present
+                                <strong>Ph.D. in Computer Science</strong>, KAIST, Feb 2026 – Present <br>
+                                <span class="text-stone-500 text-sm">Advised by <a href="https://sites.google.com/view/yjkwon/home" target="_blank" class="text-teal-600 hover:underline">Prof. Youngjin Kwon</a>
                             </li>
                             <li>
                                 <strong>M.S. in AI Semiconductor</strong>, KAIST, Mar 2024 – Feb 2026 <br>
-                                <span class="text-slate-500 text-sm">Advised by <a href="https://jongse-park.github.io/" target="_blank" class="text-teal-600 hover:underline">Prof. Jongse Park</a> and <a href="https://cp.kaist.ac.kr/jeehoon.kang/" target="_blank" class="text-teal-600 hover:underline">Prof. Jeehoon Kang</a></span>
+                                <span class="text-stone-500 text-sm">Advised by <a href="https://jongse-park.github.io/" target="_blank" class="text-teal-600 hover:underline">Prof. Jongse Park</a> and <a href="https://cp.kaist.ac.kr/jeehoon.kang/" target="_blank" class="text-teal-600 hover:underline">Prof. Jeehoon Kang</a></span>
                             </li>
                             <li>
-                                <strong>B.S. in Computer Science</strong>, University of Seoul, Mar 2016 – Aug 2022 <br>
-                                <span class="text-slate-500 text-sm">Salutatorian (Second Highest Distinction)</span>
+                                <strong>B.S. in Computer Science</strong>, University of Seoul, Mar 2019 – Aug 2022 <br>
+                                <span class="text-stone-500 text-sm">Salutatorian (Second Highest Distinction)</span>
                             </li>
                         </ul>
                     </div>
@@ -135,11 +142,11 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             Email Me
                         </a>
-                        <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" class="inline-flex items-center gap-2 bg-slate-200 text-slate-700 font-semibold py-2 px-5 rounded-lg hover:bg-slate-300 transition-colors">
+                        <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" class="inline-flex items-center gap-2 bg-stone-200 text-stone-700 font-semibold py-2 px-5 rounded-lg hover:bg-stone-300 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg>
                             ORCID
                         </a>
-                        <a href="files/cv.pdf" target="_blank" class="inline-flex items-center gap-2 bg-slate-200 text-slate-700 font-semibold py-2 px-5 rounded-lg hover:bg-slate-300 transition-colors">
+                        <a href="files/cv.pdf" target="_blank" class="inline-flex items-center gap-2 bg-stone-200 text-stone-700 font-semibold py-2 px-5 rounded-lg hover:bg-stone-300 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                             CV
                         </a>
@@ -153,28 +160,28 @@
 
         <!-- Research Section -->
         <section id="research" class="py-16 md:py-24">
-            <h2 class="text-3xl font-bold text-slate-800 mb-2">Research Interests</h2>
-            <p class="text-lg text-slate-500 mb-12">
+            <h2 class="text-3xl font-bold text-stone-800 mb-2">Research Interests</h2>
+            <p class="text-lg text-stone-600 leading-relaxed mb-12">
                 My research interests lie at the intersection of concurrent systems and formal methods. I focus on developing practical <strong>concurrent memory reclamation</strong> techniques and <strong>formally verifying</strong> the correctness of critical distributed systems.
             </p>
             <div class="space-y-8">
-                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
-                    <h3 class="text-2xl font-semibold text-slate-800 mb-4">Concurrent Memory Reclamation</h3>
-                    <div class="space-y-4 text-slate-600">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200 card-hover">
+                    <h3 class="text-2xl font-semibold text-stone-800 mb-4">Concurrent Memory Reclamation</h3>
+                    <div class="space-y-4 text-stone-600">
                         <p>My work involves designing practical and efficient memory reclamation methods for highly concurrent systems. I started this journey by contributing to the HP++ project, an extension of Hazard Pointers.</p>
                         <p>Building on that, I developed a novel Safe Memory Reclamation (SMR) scheme that combines classical Hazard Pointers with bounded RCU critical sections. This work enhances the balance between memory footprint and efficiency and was recognized with a <strong class="text-teal-600">Best Paper Award at SPAA 2024</strong>.</p>
                         <div>
-                            <h4 class="font-semibold text-slate-700">Ongoing Project:</h4>
+                            <h4 class="font-semibold text-stone-700">Ongoing Project:</h4>
                             <p>I am currently developing a lock-free, precise garbage collection library with a focus on safety, efficiency, and seamless system integration.</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
-                    <h3 class="text-2xl font-semibold text-slate-800 mb-4">Formal Verification of Distributed Systems</h3>
-                    <div class="space-y-4 text-slate-600">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200 card-hover">
+                    <h3 class="text-2xl font-semibold text-stone-800 mb-4">Formal Verification of Distributed Systems</h3>
+                    <div class="space-y-4 text-stone-600">
                         <p>I focus on creating practical methodologies for formally verifying weakly consistent distributed systems to ensure both safety and liveness properties.</p>
                         <div>
-                             <h4 class="font-semibold text-slate-700">Ongoing Project:</h4>
+                             <h4 class="font-semibold text-stone-700">Ongoing Project:</h4>
                             <p>I am a contributor to a novel top-down verification framework for weakly consistent systems, collaborating with researchers from Northeastern and Yonsei University. My role is centered on defining and proving key liveness properties, such as convergence and availability. This includes what we believe is the first formalization and verification of availability in this context.</p>
                         </div>
                     </div>
@@ -184,59 +191,59 @@
 
         <!-- Publications Section -->
         <section id="publications" class="py-16 md:py-24">
-            <h2 class="text-3xl font-bold text-slate-800 mb-2">Selected Publications</h2>
-             <p class="text-lg text-slate-500 mb-12">Here are some of my key publications. Each represents a significant step in my research journey, exploring various facets of concurrency and system verification.</p>
+            <h2 class="text-3xl font-bold text-stone-800 mb-2">Selected Publications</h2>
+             <p class="text-lg text-stone-500 mb-12">Here are some of my key publications. Each represents a significant step in my research journey, exploring various facets of concurrency and system verification.</p>
             <div class="space-y-8">
-                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
-                    <h4 class="font-semibold text-slate-800 text-lg">Compositional Model-Driven Verification of Weakly Consistent Distributed Systems</h4>
-                    <p class="text-slate-500 mt-1">Bryant J Curto, <strong class="text-slate-700">Jeonghyeon Kim</strong>, Alan Wang, Gijung Im, Jieung Kim, Jeehoon Kang, Ji-Yong Shin.</p>
-                    <p class="text-teal-600 font-medium mt-2">PLOS 2026</p>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
+                    <h4 class="font-semibold text-stone-800 text-lg">Compositional Model-Driven Verification of Weakly Consistent Distributed Systems</h4>
+                    <p class="text-stone-500 mt-1">Bryant J Curto, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Alan Wang, Gijung Im, Jieung Kim, Jeehoon Kang, Ji-Yong Shin.</p>
+                    <p class="text-teal-600 font-medium mt-2">PLOS 2025</p>
                     <div class="mt-4 flex flex-wrap gap-3">
-                        <a href="https://doi.org/10.1145/3764860.3768331" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">DOI</a>
+                        <a href="https://doi.org/10.1145/3764860.3768331" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
-                    <h4 class="font-semibold text-slate-800 text-lg">Leveraging Immutability to Validate Hazard Pointers for Optimistic Traversals</h4>
-                    <p class="text-slate-500 mt-1">Janggun Lee, <strong class="text-slate-700">Jeonghyeon Kim</strong>, Jeehoon Kang.</p>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
+                    <h4 class="font-semibold text-stone-800 text-lg">Leveraging Immutability to Validate Hazard Pointers for Optimistic Traversals</h4>
+                    <p class="text-stone-500 mt-1">Janggun Lee, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Jeehoon Kang.</p>
                     <p class="text-teal-600 font-medium mt-2">PLDI 2025</p>
                     <div class="mt-4 flex flex-wrap gap-3">
-                        <a href="https://doi.org/10.1145/3729247" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">DOI</a>
-                        <a href="papers/pldi25.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-verification" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Proof</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3729247" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/pldi25.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-verification" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Proof</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
-                     <h4 class="font-semibold text-slate-800 text-lg">Expediting Hazard Pointers with Bounded RCU Critical Sections</h4>
-                    <p class="text-slate-500 mt-1"><strong class="text-slate-700">Jeonghyeon Kim</strong>, Jaehwang Jung, Jeehoon Kang.</p>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
+                     <h4 class="font-semibold text-stone-800 text-lg">Expediting Hazard Pointers with Bounded RCU Critical Sections</h4>
+                    <p class="text-stone-500 mt-1"><strong class="text-stone-700">Jeonghyeon Kim</strong>, Jaehwang Jung, Jeehoon Kang.</p>
                     <div class="flex items-center gap-4 mt-2">
                         <p class="text-teal-600 font-medium">SPAA 2024</p>
                         <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">🏆 Best Paper Award</span>
                     </div>
                     <div class="mt-4 flex flex-wrap gap-3">
-                        <a href="https://doi.org/10.1145/3626183.3659941" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">DOI</a>
-                        <a href="papers/spaa24.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3626183.3659941" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/spaa24.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
-                    <h4 class="font-semibold text-slate-800 text-lg">Concurrent Immediate Reference Counting</h4>
-                    <p class="text-slate-500 mt-1">Jaehwang Jung, <strong class="text-slate-700">Jeonghyeon Kim</strong>, Matthew J. Parkinson, Jeehoon Kang.</p>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
+                    <h4 class="font-semibold text-stone-800 text-lg">Concurrent Immediate Reference Counting</h4>
+                    <p class="text-stone-500 mt-1">Jaehwang Jung, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Matthew J. Parkinson, Jeehoon Kang.</p>
                     <p class="text-teal-600 font-medium mt-2">PLDI 2024</p>
                     <div class="mt-4 flex flex-wrap gap-3">
-                        <a href="https://doi.org/10.1145/3656383" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">DOI</a>
-                        <a href="papers/pldi24.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3656383" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/pldi24.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
-                    <h4 class="font-semibold text-slate-800 text-lg">Applying Hazard Pointers to More Concurrent Data Structures</h4>
-                    <p class="text-slate-500 mt-1">Jaehwang Jung, Janggun Lee, <strong class="text-slate-700">Jeonghyeon Kim</strong>, Jeehoon Kang.</p>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
+                    <h4 class="font-semibold text-stone-800 text-lg">Applying Hazard Pointers to More Concurrent Data Structures</h4>
+                    <p class="text-stone-500 mt-1">Jaehwang Jung, Janggun Lee, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Jeehoon Kang.</p>
                     <p class="text-teal-600 font-medium mt-2">SPAA 2023</p>
                     <div class="mt-4 flex flex-wrap gap-3">
-                        <a href="https://doi.org/10.1145/3558481.3591102" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">DOI</a>
-                        <a href="papers/spaa23.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 font-medium py-1 px-3 rounded-full hover:bg-slate-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3558481.3591102" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/spaa23.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
             </div>
@@ -244,39 +251,39 @@
 
         <!-- Awards Section -->
         <section id="awards" class="py-16 md:py-24">
-            <h2 class="text-3xl font-bold text-slate-800 mb-2">News & Awards</h2>
-            <p class="text-lg text-slate-500 mb-12">This timeline highlights key moments and recognitions throughout my academic and competitive programming journey.</p>
+            <h2 class="text-3xl font-bold text-stone-800 mb-2">News & Awards</h2>
+            <p class="text-lg text-stone-500 mb-12">This timeline highlights key moments and recognitions throughout my academic and competitive programming journey.</p>
             <div class="relative pl-8">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content relative pb-12">
-                        <p class="text-sm text-slate-400 mb-1">June 2024</p>
-                        <h4 class="font-semibold text-lg text-slate-800">Best Paper Award</h4>
-                        <p class="text-slate-600">Our paper, "Expediting Hazard Pointers with Bounded RCU Critical Sections," received the Best Paper Award at SPAA 2024.</p>
+                        <p class="text-sm text-stone-400 mb-1">June 2024</p>
+                        <h4 class="font-semibold text-lg text-stone-800">Best Paper Award</h4>
+                        <p class="text-stone-600">Our paper, "Expediting Hazard Pointers with Bounded RCU Critical Sections," received the Best Paper Award at SPAA 2024.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content relative pb-12">
-                        <p class="text-sm text-slate-400 mb-1">December 2022</p>
-                        <h4 class="font-semibold text-lg text-slate-800">2nd Place</h4>
-                        <p class="text-slate-600">Awarded 2nd Place in the Goorm Algorithm Monday Challenge.</p>
+                        <p class="text-sm text-stone-400 mb-1">December 2022</p>
+                        <h4 class="font-semibold text-lg text-stone-800">2nd Place</h4>
+                        <p class="text-stone-600">Awarded 2nd Place in the Goorm Algorithm Monday Challenge.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content relative pb-12">
-                        <p class="text-sm text-slate-400 mb-1">August 2022</p>
-                        <h4 class="font-semibold text-lg text-slate-800">Salutatorian (Second Highest Distinction)</h4>
-                        <p class="text-slate-600">Graduated with the second-highest academic standing from the University of Seoul.</p>
+                        <p class="text-sm text-stone-400 mb-1">August 2022</p>
+                        <h4 class="font-semibold text-lg text-stone-800">Salutatorian (Second Highest Distinction)</h4>
+                        <p class="text-stone-600">Graduated with the second-highest academic standing from the University of Seoul.</p>
                     </div>
                 </div>
                  <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content relative pb-12">
-                        <p class="text-sm text-slate-400 mb-1">July 2022</p>
-                        <h4 class="font-semibold text-lg text-slate-800">The Encouragement Award</h4>
-                        <p class="text-slate-600">Received at the '22 Hyundai Mobis Algorithm Competition.</p>
+                        <p class="text-sm text-stone-400 mb-1">July 2022</p>
+                        <h4 class="font-semibold text-lg text-stone-800">The Encouragement Award</h4>
+                        <p class="text-stone-600">Received at the '22 Hyundai Mobis Algorithm Competition.</p>
                     </div>
                 </div>
             </div>
@@ -284,9 +291,14 @@
 
     </main>
     
-    <footer class="border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-slate-500">
-            <p>&copy; 2026 Jeonghyeon Kim. All rights reserved.</p>
+    <footer class="border-t border-stone-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center">
+             <div class="flex space-x-6 mb-4">
+                <a href="mailto:jeonghyeon.kim@kaist.ac.kr" class="text-stone-500 hover:text-teal-600 transition-colors">Email</a>
+                <a href="files/cv.pdf" target="_blank" class="text-stone-500 hover:text-teal-600 transition-colors">CV</a>
+                <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" class="text-stone-500 hover:text-teal-600 transition-colors">ORCID</a>
+            </div>
+            <p class="text-stone-400 text-sm">&copy; 2026 Jeonghyeon Kim. All rights reserved.</p>
         </div>
     </footer>
 
