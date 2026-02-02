@@ -9,22 +9,14 @@
     <meta property="og:title" content="Jeonghyeon Kim - Ph.D. Student at KAIST">
     <meta property="og:description" content="Researching concurrent systems and formal verification.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhyeon.kim">
+    <meta property="og:image" content="https://jhyeon.kim/images/profile.jpg">
+    <link rel="canonical" href="https://jhyeon.kim">
     <title>Jeonghyeon Kim</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- 
-        Chosen Palette: Warm Neutrals
-        Application Structure Plan: A single-page, vertical layout with a sticky navigation header for easy access to different content sections (About, Research, Publications, Awards). This structure is ideal for a personal portfolio as it allows a user to quickly scan the entire profile or jump directly to a section of interest. The flow is logical: a high-level introduction first, followed by detailed research interests, a list of publications, and a chronological display of achievements. This prioritizes clarity and user experience over a rigid, chapter-like structure.
-        Visualization & Content Choices: 
-        - About/Hero: Goal: Inform. Method: Clear, concise text block next to a profile image to establish identity.
-        - Research Interests: Goal: Organize & Inform. Method: A single-column layout using landscape cards to present the two distinct research areas, allowing for focused reading. Badges highlight key achievements. Implemented with HTML/Tailwind.
-        - Publications: Goal: Organize & Inform. Method: A clean, vertical list of publications, with the user's name bolded for emphasis, a badge for the award-winning paper, and clear links to resources (DOI, Paper, Artifacts). Implemented with HTML/Tailwind.
-        - Awards & News: Goal: Show Change/Progression. Method: A vertical timeline to chronologically display achievements in a visually engaging manner. Implemented with HTML/Tailwind and CSS pseudo-elements.
-        - No charts (Chart.js/Plotly) were used as the source content is qualitative and does not contain data suitable for charting.
-        CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
-    -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -97,18 +89,18 @@
                     <a href="#publications" class="nav-link text-stone-600 font-medium">Publications</a>
                     <a href="#awards" class="nav-link text-stone-600 font-medium">Awards</a>
                 </nav>
-                 <button id="mobile-menu-button" class="md:hidden text-stone-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="md:hidden text-stone-700" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
+        <nav id="mobile-menu" class="hidden md:hidden" aria-label="Mobile navigation">
             <a href="#about" class="block py-2 px-4 text-sm nav-link-mobile">About</a>
             <a href="#research" class="block py-2 px-4 text-sm nav-link-mobile">Research</a>
             <a href="#publications" class="block py-2 px-4 text-sm nav-link-mobile">Publications</a>
             <a href="#awards" class="block py-2 px-4 text-sm nav-link-mobile">Awards</a>
-        </div>
+        </nav>
     </header>
 
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
@@ -120,16 +112,16 @@
                     <h1 class="text-4xl md:text-6xl font-bold text-stone-800 leading-tight">Jeonghyeon Kim</h1>
                     <div class="mt-8 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl space-y-6">
                         <p>
-                            I am a <strong class="text-stone-700">Ph.D. student</strong> at <a href="https://www.kaist.ac.kr" target="_blank" class="text-teal-600 hover:underline font-medium">KAIST</a>, currently advised by <a href="https://sites.google.com/view/yjkwon/home" target="_blank" class="text-teal-600 hover:underline font-medium">Prof. Youngjin Kwon</a> in the School of Computing.
+                            I am a <strong class="text-stone-700">Ph.D. student</strong> at <a href="https://www.kaist.ac.kr" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline font-medium">KAIST</a>, currently advised by <a href="https://sites.google.com/view/yjkwon/home" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline font-medium">Prof. Youngjin Kwon</a> in the School of Computing.
                         </p>
                         <ul class="list-disc list-outside ml-6 space-y-3 text-base md:text-lg">
                             <li>
                                 <strong>Ph.D. in Computer Science</strong>, KAIST, Feb 2026 – Present <br>
-                                <span class="text-stone-500 text-sm">Advised by <a href="https://sites.google.com/view/yjkwon/home" target="_blank" class="text-teal-600 hover:underline">Prof. Youngjin Kwon</a>
+                                <span class="text-stone-500 text-sm">Advised by <a href="https://sites.google.com/view/yjkwon/home" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline">Prof. Youngjin Kwon</a></span>
                             </li>
                             <li>
                                 <strong>M.S. in AI Semiconductor</strong>, KAIST, Mar 2024 – Feb 2026 <br>
-                                <span class="text-stone-500 text-sm">Advised by <a href="https://jongse-park.github.io/" target="_blank" class="text-teal-600 hover:underline">Prof. Jongse Park</a> and <a href="https://cp.kaist.ac.kr/jeehoon.kang/" target="_blank" class="text-teal-600 hover:underline">Prof. Jeehoon Kang</a></span>
+                                <span class="text-stone-500 text-sm">Advised by <a href="https://jongse-park.github.io/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline">Prof. Jongse Park</a> and <a href="https://cp.kaist.ac.kr/jeehoon.kang/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline">Prof. Jeehoon Kang</a></span>
                             </li>
                             <li>
                                 <strong>B.S. in Computer Science</strong>, University of Seoul, Mar 2019 – Aug 2022 <br>
@@ -142,11 +134,11 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             Email Me
                         </a>
-                        <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" class="inline-flex items-center gap-2 bg-stone-200 text-stone-700 font-semibold py-2 px-5 rounded-lg hover:bg-stone-300 transition-colors">
+                        <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-stone-200 text-stone-700 font-semibold py-2 px-5 rounded-lg hover:bg-stone-300 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg>
                             ORCID
                         </a>
-                        <a href="files/cv.pdf" target="_blank" class="inline-flex items-center gap-2 bg-stone-200 text-stone-700 font-semibold py-2 px-5 rounded-lg hover:bg-stone-300 transition-colors">
+                        <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-stone-200 text-stone-700 font-semibold py-2 px-5 rounded-lg hover:bg-stone-300 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                             CV
                         </a>
@@ -181,7 +173,7 @@
                     <div class="space-y-4 text-stone-600">
                         <p>I focus on creating practical methodologies for formally verifying weakly consistent distributed systems to ensure both safety and liveness properties.</p>
                         <div>
-                             <h4 class="font-semibold text-stone-700">Ongoing Project:</h4>
+                            <h4 class="font-semibold text-stone-700">Ongoing Project:</h4>
                             <p>I am a contributor to a novel top-down verification framework for weakly consistent systems, collaborating with researchers from Northeastern and Yonsei University. My role is centered on defining and proving key liveness properties, such as convergence and availability. This includes what we believe is the first formalization and verification of availability in this context.</p>
                         </div>
                     </div>
@@ -192,14 +184,14 @@
         <!-- Publications Section -->
         <section id="publications" class="py-16 md:py-24">
             <h2 class="text-3xl font-bold text-stone-800 mb-2">Selected Publications</h2>
-             <p class="text-lg text-stone-500 mb-12">Here are some of my key publications. Each represents a significant step in my research journey, exploring various facets of concurrency and system verification.</p>
+            <p class="text-lg text-stone-500 mb-12">Here are some of my key publications. Each represents a significant step in my research journey, exploring various facets of concurrency and system verification.</p>
             <div class="space-y-8">
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
                     <h4 class="font-semibold text-stone-800 text-lg">Compositional Model-Driven Verification of Weakly Consistent Distributed Systems</h4>
                     <p class="text-stone-500 mt-1">Bryant J Curto, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Alan Wang, Gijung Im, Jieung Kim, Jeehoon Kang, Ji-Yong Shin.</p>
                     <div class="mt-4 flex flex-wrap items-center gap-3">
                         <span class="text-teal-600 font-medium">PLOS 2025</span>
-                        <a href="https://doi.org/10.1145/3764860.3768331" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="https://doi.org/10.1145/3764860.3768331" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
@@ -207,21 +199,21 @@
                     <p class="text-stone-500 mt-1">Janggun Lee, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Jeehoon Kang.</p>
                     <div class="mt-4 flex flex-wrap items-center gap-3">
                         <span class="text-teal-600 font-medium">PLDI 2025</span>
-                        <a href="https://doi.org/10.1145/3729247" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
-                        <a href="papers/pldi25.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-verification" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Proof</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3729247" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/pldi25.pdf" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-verification" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Proof</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
-                     <h4 class="font-semibold text-stone-800 text-lg">Expediting Hazard Pointers with Bounded RCU Critical Sections</h4>
+                    <h4 class="font-semibold text-stone-800 text-lg">Expediting Hazard Pointers with Bounded RCU Critical Sections</h4>
                     <p class="text-stone-500 mt-1"><strong class="text-stone-700">Jeonghyeon Kim</strong>, Jaehwang Jung, Jeehoon Kang.</p>
                     <div class="mt-4 flex flex-wrap items-center gap-3">
                         <span class="text-teal-600 font-medium">SPAA 2024</span>
                         <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">🏆 Best Paper Award</span>
-                        <a href="https://doi.org/10.1145/3626183.3659941" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
-                        <a href="papers/spaa24.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3626183.3659941" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/spaa24.pdf" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
@@ -229,9 +221,9 @@
                     <p class="text-stone-500 mt-1">Jaehwang Jung, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Matthew J. Parkinson, Jeehoon Kang.</p>
                     <div class="mt-4 flex flex-wrap items-center gap-3">
                         <span class="text-teal-600 font-medium">PLDI 2024</span>
-                        <a href="https://doi.org/10.1145/3656383" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
-                        <a href="papers/pldi24.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3656383" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/pldi24.pdf" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 card-hover">
@@ -239,9 +231,9 @@
                     <p class="text-stone-500 mt-1">Jaehwang Jung, Janggun Lee, <strong class="text-stone-700">Jeonghyeon Kim</strong>, Jeehoon Kang.</p>
                     <div class="mt-4 flex flex-wrap items-center gap-3">
                         <span class="text-teal-600 font-medium">SPAA 2023</span>
-                        <a href="https://doi.org/10.1145/3558481.3591102" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
-                        <a href="papers/spaa23.pdf" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
+                        <a href="https://doi.org/10.1145/3558481.3591102" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">DOI</a>
+                        <a href="papers/spaa23.pdf" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Paper</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" rel="noopener noreferrer" class="text-sm inline-flex items-center gap-1.5 bg-stone-100 text-stone-600 font-medium py-1 px-3 rounded-full hover:bg-stone-200 transition-colors">Benchmark</a>
                     </div>
                 </div>
             </div>
@@ -276,7 +268,7 @@
                         <p class="text-stone-600">Graduated with the second-highest academic standing from the University of Seoul.</p>
                     </div>
                 </div>
-                 <div class="timeline-item">
+                <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content relative pb-12">
                         <p class="text-sm text-stone-400 mb-1">July 2022</p>
@@ -291,10 +283,10 @@
     
     <footer class="border-t border-stone-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center">
-             <div class="flex space-x-6 mb-4">
+            <div class="flex space-x-6 mb-4">
                 <a href="mailto:jeonghyeon.kim@kaist.ac.kr" class="text-stone-500 hover:text-teal-600 transition-colors">Email</a>
-                <a href="files/cv.pdf" target="_blank" class="text-stone-500 hover:text-teal-600 transition-colors">CV</a>
-                <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" class="text-stone-500 hover:text-teal-600 transition-colors">ORCID</a>
+                <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer" class="text-stone-500 hover:text-teal-600 transition-colors">CV</a>
+                <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" rel="noopener noreferrer" class="text-stone-500 hover:text-teal-600 transition-colors">ORCID</a>
             </div>
             <p class="text-stone-400 text-sm">&copy; 2026 Jeonghyeon Kim. All rights reserved.</p>
         </div>
@@ -315,12 +307,15 @@
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         const mobileNavLinks = document.querySelectorAll('.nav-link-mobile');
         mobileNavLinks.forEach(link => {
             link.addEventListener('click', () => {
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
                 mobileMenu.classList.add('hidden');
             });
         });
