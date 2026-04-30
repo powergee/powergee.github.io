@@ -32,7 +32,7 @@
         "sameAs": [
             "https://orcid.org/0009-0000-7070-3578",
             "https://scholar.google.com/citations?user=bs0LeioAAAAJ",
-            "https://github.com/powergee"
+            "https://github.com/kim-jhyeon"
         ],
         "knowsAbout": ["Concurrent Systems", "Memory Reclamation", "Formal Verification", "Distributed Systems"]
     }
@@ -367,6 +367,75 @@
             vertical-align: 2px;
         }
 
+        /* ---------- Publications: subsections, cite ---------- */
+        .pub-subheading {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin: 38px 0 16px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--rule);
+        }
+        .pub-subheading:first-of-type { margin-top: 4px; }
+
+        .cite-box {
+            margin-top: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12.5px;
+        }
+        .cite-box summary {
+            cursor: pointer;
+            display: inline-block;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            border-bottom: 1px solid var(--rule-strong);
+            padding-bottom: 1px;
+            list-style: none;
+        }
+        .cite-box summary::-webkit-details-marker { display: none; }
+        .cite-box summary::marker { content: ''; }
+        .cite-box summary:hover,
+        .cite-box[open] > summary {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+        .cite-box pre {
+            margin: 10px 0 0;
+            padding: 12px 14px;
+            background: var(--bg-soft);
+            border: 1px solid var(--rule);
+            overflow-x: auto;
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 12px;
+            line-height: 1.55;
+            color: var(--ink-soft);
+        }
+
+        /* ---------- Recent pin (hero) ---------- */
+        .recent-pin {
+            margin: 22px 0 0;
+            padding: 12px 16px;
+            border-left: 3px solid var(--accent);
+            background: var(--bg-soft);
+            font-size: 16px;
+            color: var(--ink-soft);
+            line-height: 1.55;
+        }
+        .recent-pin .recent-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
         /* ---------- News & Awards ---------- */
         .news-list {
             list-style: none;
@@ -462,6 +531,11 @@
                 I am interested in problems where careful theory translates into measurable systems improvements:
                 bridging the gap between hand-tuned concurrent algorithms and the rigorous arguments that justify them.
             </p>
+            <div class="recent-pin">
+                <span class="recent-label">Recent</span>
+                Our paper <em>"Revisiting Partial Tracing for Safe, Efficient, and Concurrent Garbage Collection in Unmanaged Languages"</em> has been accepted to <strong>PLDI 2026</strong>.
+                <a href="papers/pldi26.pdf" target="_blank" rel="noopener noreferrer">Preprint</a>.
+            </div>
             <ul class="meta-list">
                 <li>
                     <span class="label">Email</span>
@@ -476,7 +550,7 @@
                         <span class="sep">·</span>
                         <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" rel="noopener noreferrer">ORCID</a>
                         <span class="sep">·</span>
-                        <a href="https://github.com/powergee" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://github.com/kim-jhyeon" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </span>
                 </li>
             </ul>
@@ -553,6 +627,8 @@
     <!-- Publications -->
     <section id="publications">
         <h2 class="section-title">Publications</h2>
+
+        <h3 class="pub-subheading">First-Authored</h3>
         <ol class="pub-list">
 
             <li class="pub">
@@ -564,10 +640,52 @@
                     <div class="title">Revisiting Partial Tracing for Safe, Efficient, and Concurrent Garbage Collection in Unmanaged Languages</div>
                     <div class="authors"><span class="me">Jeonghyeon Kim</span>, Jongse Park, Youngjin Kwon, Jeehoon Kang</div>
                     <div class="links">
+                        <a href="https://doi.org/10.1145/3808310" target="_blank" rel="noopener noreferrer">DOI</a>
                         <a href="papers/pldi26.pdf" target="_blank" rel="noopener noreferrer">Preprint</a>
+                    </div>
+                    <details class="cite-box">
+                        <summary>BibTeX</summary>
+<pre>@article{kim2026partial,
+  author    = {Kim, Jeonghyeon and Park, Jongse and Kwon, Youngjin and Kang, Jeehoon},
+  title     = {Revisiting Partial Tracing for Safe, Efficient, and Concurrent
+               Garbage Collection in Unmanaged Languages},
+  journal   = {Proc. ACM Program. Lang.},
+  volume    = {10},
+  number    = {PLDI},
+  articleno = {232},
+  year      = {2026},
+  month     = jun,
+  doi       = {10.1145/3808310},
+  note      = {To appear}
+}</pre>
+                    </details>
+                </div>
+            </li>
+
+            <li class="pub">
+                <div class="venue">
+                    <span class="v-name">SPAA</span>
+                    <span class="v-year">2024</span>
+                </div>
+                <div class="body">
+                    <div class="title">
+                        Expediting Hazard Pointers with Bounded RCU Critical Sections
+                        <span class="award-mark">Best Paper</span>
+                    </div>
+                    <div class="authors"><span class="me">Jeonghyeon Kim</span>, Jaehwang Jung, Jeehoon Kang</div>
+                    <div class="links">
+                        <a href="https://doi.org/10.1145/3626183.3659941" target="_blank" rel="noopener noreferrer">DOI</a>
+                        <a href="papers/spaa24.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                        <a href="https://docs.google.com/presentation/d/12ZKQsbDYhGmsH5HmveP1OpDdnimMJKcZ1HVroLHFVl8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Slides</a>
+                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" rel="noopener noreferrer">Benchmark</a>
                     </div>
                 </div>
             </li>
+
+        </ol>
+
+        <h3 class="pub-subheading">Co-Authored</h3>
+        <ol class="pub-list">
 
             <li class="pub">
                 <div class="venue">
@@ -595,26 +713,6 @@
                         <a href="https://doi.org/10.1145/3729247" target="_blank" rel="noopener noreferrer">DOI</a>
                         <a href="papers/pldi25.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
                         <a href="https://github.com/kaist-cp/smr-verification" target="_blank" rel="noopener noreferrer">Proof</a>
-                        <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" rel="noopener noreferrer">Benchmark</a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="pub">
-                <div class="venue">
-                    <span class="v-name">SPAA</span>
-                    <span class="v-year">2024</span>
-                </div>
-                <div class="body">
-                    <div class="title">
-                        Expediting Hazard Pointers with Bounded RCU Critical Sections
-                        <span class="award-mark">Best Paper</span>
-                    </div>
-                    <div class="authors"><span class="me">Jeonghyeon Kim</span>, Jaehwang Jung, Jeehoon Kang</div>
-                    <div class="links">
-                        <a href="https://doi.org/10.1145/3626183.3659941" target="_blank" rel="noopener noreferrer">DOI</a>
-                        <a href="papers/spaa24.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
-                        <a href="https://docs.google.com/presentation/d/12ZKQsbDYhGmsH5HmveP1OpDdnimMJKcZ1HVroLHFVl8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Slides</a>
                         <a href="https://github.com/kaist-cp/smr-benchmark" target="_blank" rel="noopener noreferrer">Benchmark</a>
                     </div>
                 </div>
@@ -686,10 +784,140 @@
         <a href="mailto:jeonghyeon.kim@kaist.ac.kr">Email</a> &nbsp;
         <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a> &nbsp;
         <a href="https://scholar.google.com/citations?user=bs0LeioAAAAJ" target="_blank" rel="noopener noreferrer">Scholar</a> &nbsp;
-        <a href="https://github.com/powergee" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;
+        <a href="https://github.com/kim-jhyeon" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;
         <a href="https://orcid.org/0009-0000-7070-3578" target="_blank" rel="noopener noreferrer">ORCID</a>
     </div>
 </footer>
+
+<!-- Per-publication structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Revisiting Partial Tracing for Safe, Efficient, and Concurrent Garbage Collection in Unmanaged Languages",
+  "author": [
+    {"@type": "Person", "name": "Jeonghyeon Kim", "url": "https://jhyeon.kim"},
+    {"@type": "Person", "name": "Jongse Park"},
+    {"@type": "Person", "name": "Youngjin Kwon"},
+    {"@type": "Person", "name": "Jeehoon Kang"}
+  ],
+  "datePublished": "2026-06",
+  "isPartOf": {
+    "@type": "PublicationEvent",
+    "name": "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)",
+    "startDate": "2026"
+  },
+  "url": "https://doi.org/10.1145/3808310",
+  "sameAs": "https://doi.org/10.1145/3808310"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Expediting Hazard Pointers with Bounded RCU Critical Sections",
+  "author": [
+    {"@type": "Person", "name": "Jeonghyeon Kim", "url": "https://jhyeon.kim"},
+    {"@type": "Person", "name": "Jaehwang Jung"},
+    {"@type": "Person", "name": "Jeehoon Kang"}
+  ],
+  "datePublished": "2024",
+  "isPartOf": {
+    "@type": "PublicationEvent",
+    "name": "ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)",
+    "startDate": "2024"
+  },
+  "url": "https://doi.org/10.1145/3626183.3659941",
+  "sameAs": "https://doi.org/10.1145/3626183.3659941",
+  "award": "Best Paper Award"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Compositional Model-Driven Verification of Weakly Consistent Distributed Systems",
+  "author": [
+    {"@type": "Person", "name": "Bryant J. Curto"},
+    {"@type": "Person", "name": "Jeonghyeon Kim", "url": "https://jhyeon.kim"},
+    {"@type": "Person", "name": "Alan Wang"},
+    {"@type": "Person", "name": "Gijung Im"},
+    {"@type": "Person", "name": "Jieung Kim"},
+    {"@type": "Person", "name": "Jeehoon Kang"},
+    {"@type": "Person", "name": "Ji-Yong Shin"}
+  ],
+  "datePublished": "2025",
+  "isPartOf": {
+    "@type": "PublicationEvent",
+    "name": "Workshop on Programming Languages and Operating Systems (PLOS)",
+    "startDate": "2025"
+  },
+  "url": "https://doi.org/10.1145/3764860.3768331",
+  "sameAs": "https://doi.org/10.1145/3764860.3768331"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Leveraging Immutability to Validate Hazard Pointers for Optimistic Traversals",
+  "author": [
+    {"@type": "Person", "name": "Janggun Lee"},
+    {"@type": "Person", "name": "Jeonghyeon Kim", "url": "https://jhyeon.kim"},
+    {"@type": "Person", "name": "Jeehoon Kang"}
+  ],
+  "datePublished": "2025",
+  "isPartOf": {
+    "@type": "PublicationEvent",
+    "name": "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)",
+    "startDate": "2025"
+  },
+  "url": "https://doi.org/10.1145/3729247",
+  "sameAs": "https://doi.org/10.1145/3729247"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Concurrent Immediate Reference Counting",
+  "author": [
+    {"@type": "Person", "name": "Jaehwang Jung"},
+    {"@type": "Person", "name": "Jeonghyeon Kim", "url": "https://jhyeon.kim"},
+    {"@type": "Person", "name": "Matthew J. Parkinson"},
+    {"@type": "Person", "name": "Jeehoon Kang"}
+  ],
+  "datePublished": "2024",
+  "isPartOf": {
+    "@type": "PublicationEvent",
+    "name": "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)",
+    "startDate": "2024"
+  },
+  "url": "https://doi.org/10.1145/3656383",
+  "sameAs": "https://doi.org/10.1145/3656383"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Applying Hazard Pointers to More Concurrent Data Structures",
+  "author": [
+    {"@type": "Person", "name": "Jaehwang Jung"},
+    {"@type": "Person", "name": "Janggun Lee"},
+    {"@type": "Person", "name": "Jeonghyeon Kim", "url": "https://jhyeon.kim"},
+    {"@type": "Person", "name": "Jeehoon Kang"}
+  ],
+  "datePublished": "2023",
+  "isPartOf": {
+    "@type": "PublicationEvent",
+    "name": "ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)",
+    "startDate": "2023"
+  },
+  "url": "https://doi.org/10.1145/3558481.3591102",
+  "sameAs": "https://doi.org/10.1145/3558481.3591102"
+}
+</script>
 
 </body>
 </html>
